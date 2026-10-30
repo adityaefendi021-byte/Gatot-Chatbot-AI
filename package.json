@@ -1,0 +1,17 @@
+{
+  "name": "gatot-ai",
+  "version": "1.0.0",
+  "description": "GATOT AI - chatbot personal berbasis Gemini",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  }
+}

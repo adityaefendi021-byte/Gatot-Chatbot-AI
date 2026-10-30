@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#172747">
+  <title>GATOT AI — Asisten Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <div class="brand-name">GATOT AI</div>
+          <div class="brand-caption">ASISTEN NUSANTARA</div>
+        </div>
+      </div>
+
+      <button class="new-chat" id="new-chat" type="button">
+        <span class="plus">＋</span> Percakapan Baru
+      </button>
+
+      <div class="side-heading">RIWAYAT PERCAKAPAN</div>
+      <div class="chat-list" id="chat-list"></div>
+
+      <div class="sidebar-bottom">
+        <div class="batik-seal">✺</div>
+        <div>
+          <strong>Bangga Karya Indonesia</strong>
+          <span>Teknologi modern, jiwa Nusantara.</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Buka menu">☰</button>
+        <div>
+          <div class="top-title">Ruang Percakapan</div>
+          <div class="top-subtitle">Teman berpikir dan berkarya</div>
+        </div>
+        <div class="model-chip"><span class="status-dot"></span> Gemini 3.8 Flash</div>
+      </header>
+
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="welcome-emblem"><span>G</span></div>
+          <div class="eyebrow">SELAMAT DATANG DI GATOT AI</div>
+          <h1>Ada yang bisa <span>Gatot</span> bantu?</h1>
+          <p>Teman AI untuk mencari ide, belajar, bekerja, dan menyelesaikan hal-hal hebat.</p>
+
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Bantu aku menyusun jadwal kegiatan hari ini.">
+              <span class="suggestion-icon">◷</span>
+              <strong>Atur produktivitas</strong>
+              <small>Buat jadwal kegiatan yang rapi</small>
+            </button>
+            <button class="suggestion" data-prompt="Jelaskan konsep kecerdasan buatan dengan bahasa sederhana.">
+              <span class="suggestion-icon">✧</span>
+              <strong>Belajar hal baru</strong>
+              <small>Pahami topik dengan mudah</small>
+            </button>
+            <button class="suggestion" data-prompt="Berikan 5 ide kreatif untuk membuat konten YouTube Shorts.">
+              <span class="suggestion-icon">▧</span>
+              <strong>Cari inspirasi</strong>
+              <small>Temukan ide konten kreatif</small>
+            </button>
+            <button class="suggestion" data-prompt="Bantu aku memahami dan memperbaiki kode JavaScript.">
+              <span class="suggestion-icon">⌘</span>
+              <strong>Bantuan coding</strong>
+              <small>Belajar dan pecahkan masalah kode</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-area">
+        <form class="composer" id="chat-form">
+          <textarea id="user-input" rows="1" placeholder="Tulis pesan untuk GATOT AI..." autocomplete="off"></textarea>
+          <button class="send-button" id="send-button" type="submit" aria-label="Kirim pesan">
+            <span>➤</span>
+          </button>
+        </form>
+        <div class="composer-note">GATOT AI dapat membuat kesalahan. Periksa kembali informasi penting.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
